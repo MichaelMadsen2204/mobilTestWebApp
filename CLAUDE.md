@@ -17,6 +17,7 @@ Live: https://michaelmadsen2204.github.io/mobilTestWebApp/
 | `icon.svg` | Kildeikon (vektor) |
 | `icon-192.png`, `icon-512.png` | PNG-ikoner til Android og `apple-touch-icon` |
 | `CLAUDE.md` | Denne fil |
+| `STATUS.md` | Overdragelsesfil: hvad der er bekræftet og lært |
 
 ## Regler
 
