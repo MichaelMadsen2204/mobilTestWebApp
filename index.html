@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tæller</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #1e293b;
+      font-family: system-ui, sans-serif;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button {
+      width: 70vmin;
+      height: 70vmin;
+      border: none;
+      border-radius: 50%;
+      background: #f59e0b;
+      color: #1e293b;
+      font-size: 20vmin;
+      font-weight: bold;
+      touch-action: manipulation; /* undgår dobbelttryk-zoom på mobil */
+      -webkit-tap-highlight-color: transparent;
+    }
+    button:active {
+      transform: scale(0.96);
+    }
+  </style>
+</head>
+<body>
+  <button id="knap">0</button>
+  <script>
+    const NOEGLE = "taeller";
+    const knap = document.getElementById("knap");
+    let antal = Number(localStorage.getItem(NOEGLE)) || 0;
+    knap.textContent = antal;
+
+    knap.addEventListener("click", () => {
+      antal += 1;
+      knap.textContent = antal;
+      localStorage.setItem(NOEGLE, antal);
+    });
+  </script>
+</body>
+</html>
