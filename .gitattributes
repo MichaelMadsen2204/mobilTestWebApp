@@ -1,0 +1,5 @@
+# Tekstfiler gemmes og checkes ud med LF på alle maskiner
+* text=auto eol=lf
+
+# Binære filer må aldrig konverteres
+*.png binary
