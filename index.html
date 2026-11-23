@@ -35,10 +35,18 @@
     button:active {
       transform: scale(0.96);
     }
+    #version {
+      position: fixed;
+      bottom: 1rem;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
   <button id="knap">0</button>
+  <!-- Tæl op ved hver ændring for at se, hvornår den installerede app opdaterer -->
+  <div id="version">v2</div>
   <script>
     const NOEGLE = "taeller";
     const knap = document.getElementById("knap");
